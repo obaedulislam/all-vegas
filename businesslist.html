@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Website</title>
+
+    <!--All CSS File Link Here-->
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!--====|| Header Section Start ||====-->
+    <header id="common-header">
+        <div class="container">
+            
+            <!--Navigation Start-->
+            <nav class="navbar navbar-expand-lg  pl-0 pr-0">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html"><img src="images/homepage/ALL-VEGAS-LOGO.png" alt="All Vegas"></a>
+                </div>
+
+                <form class="form-inline my-20 my-lg-0 menu-search">
+                    <div class="search-place">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="search" id="search" placeholder="Lorem Dollar">
+                    </div>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item" id="s-drop">
+                            <a class="nav-link" href="inner.html" target="_blank">Shows</a>
+                            <ul>
+                                <li><a href="tickets.html" target="_blank">Tickets</a></li> 
+                            </ul>
+                        </li>
+                        <li class="nav-item" id="b-drop">
+                            <a class="nav-link" href="business.html">Business</a>
+                            <ul>
+                                <li><a href="businesslist.html">Business List</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fas fa-user"></i> <span style="margin-left: 10px;">Sign In</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Navigation End-->
+        </div>
+    </header>
+    <!--====|| Header Section End ||====-->
+
+    <!--====|| Business List Section Start ||====-->
+    <section id="business-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12 col-12 pt-20 pb-50">
+                    <!-- List Tab Section Start -->
+                    <div class="list-tab">
+                        <ul>
+                            <li><a href="#"><img src="images/businesslist/location.png" alt="Location">Location</a></li>
+                            <li><a href="#"><img src="images/businesslist/price.png" alt="Price">Price</a></li>
+                            <li><a href="#"><img src="images/businesslist/time.png" alt="Open">Open</a></li>
+                            <li><a href="#"><img src="images/businesslist/star.png" alt="Highest Rank">Highest Ranked</a></li>
+                            <li><a href="#"><img src="images/businesslist/message.png" alt="Most Reviews">Most Reviews</a></li>
+                            <li>
+                                <select id="all-business" name="business">
+                                    <option value="hotel"><span> All Business</span></option>
+                                    <option value="casino"><span> Shops</span> </option>
+                                    <option value="fiat"><span> Hotels</span> </option>
+                                    <option value="game"><span> Cafes</span></option>
+                                    <option value="theatre"><span> Restaurants</span></option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- List Tab Section END -->
+
+
+                    <!--Individual List Content Start-->
+                    <div class="individual-business mt-50">
+                        <div class="single-business">
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12 pr-0">
+                                    <div class="business-image">
+                                        <img src="images/businesslist/featured-business1.jpg" alt="Features Business">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-12 pl-0">
+                                    <div class="bimage-content">
+                                        <h4>Featuredbusiness <span> <img src="images/businesslist/shop.png" alt=""> Shops</span></h4>
+                                        <!--Business Heading End-->
+
+                                        <ul class="b-rating">
+                                            <li>
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-gray.png" alt="Review">
+                                            </li>
+
+                                            <li>
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-gray.png" alt="Price">
+                                                <img src="images/businesslist/dolar-gray.png" alt="Price">
+                                            </li>
+                                            <li><span>24 Ratings</span></li>
+                                        </ul>
+                                        <!--Review End-->
+
+                                        <div class="business-details">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+                                                    <div class="person-img text-center">
+                                                        <img src="images/businesslist/business-people1.png" alt="Business People">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-10 col-md-10 col-sm-9 col-12 p-0">
+                                                    <div class="person-business">
+                                                        <p>This boutique hotel offers such friendly service, a great morning continental breakfast,free newspaper, wine happy hours, and evening cookies. it feels like you’re staying...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Business Details End-->
+
+                                        <ul class="opening-loc">
+                                            <li><img src="images/businesslist/time-open.png" alt="Opening Time"> <span style="color: #e75054;">Open Now</span> </li>
+                                            <li><img src="images/businesslist/location.png" alt="Opening Time"> 55 N Street, Las Vegas, NV, United States</li>
+                                        </ul>
+                                        <!--Opening Location End-->
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Business End-->
+
+                        <div class="single-business">
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12 pr-0">
+                                    <div class="business-image">
+                                        <img src="images/businesslist/featured-business2.jpg" alt="Features Business">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-12 pl-0">
+                                    <div class="bimage-content">
+                                        <h4>Featuredbusiness <span> <img src="images/businesslist/shop.png" alt=""> Hotels</span></h4>
+                                        <!--Business Heading End-->
+
+                                        <ul class="b-rating">
+                                            <li>
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-gray.png" alt="Review">
+                                            </li>
+
+                                            <li>
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+
+                                            </li>
+                                            <li><span>24 Ratings</span></li>
+                                        </ul>
+                                        <!--Review End-->
+
+                                        <div class="business-details">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                                                    <div class="person-img text-center">
+                                                        <img src="images/businesslist/business-people2.png" alt="Business People">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-10 col-md-10 col-sm-10 col-12 p-0">
+                                                    <div class="person-business">
+                                                        <p>This boutique hotel offers such friendly service, a great morning continental breakfast,free newspaper, wine happy hours, and evening cookies. it feels like you’re staying...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Business Details End-->
+
+                                        <ul class="opening-loc">
+                                            <li><img src="images/businesslist/time-open.png" alt="Opening Time"> <span style="color: #e75054;">Open Now</span> </li>
+                                            <li><img src="images/businesslist/location.png" alt="Opening Time"> 55 N Street, Las Vegas, NV, United States</li>
+                                        </ul>
+                                        <!--Opening Location End-->
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Business End-->
+
+                        <div class="single-business">
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12 pr-0">
+                                    <div class="business-image">
+                                        <img src="images/businesslist/featured-business3.jpg" alt="Features Business">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-12 pl-0">
+                                    <div class="bimage-content">
+                                        <h4>Featuredbusiness <span> <img src="images/businesslist/shop.png" alt=""> Cafes</span></h4>
+                                        <!--Business Heading End-->
+
+                                        <ul class="b-rating">
+                                            <li>
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                
+                                            </li>
+
+                                            <li>
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-gray.png" alt="Price">
+                                                <img src="images/businesslist/dolar-gray.png" alt="Price">
+                                            </li>
+                                            <li><span>24 Ratings</span></li>
+                                        </ul>
+                                        <!--Review End-->
+
+                                        <div class="business-details">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                                                    <div class="person-img text-center">
+                                                        <img src="images/businesslist/business-people3.png" alt="Business People">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-10 col-md-10 col-sm-10 col-12 p-0">
+                                                    <div class="person-business">
+                                                        <p>This boutique hotel offers such friendly service, a great morning continental breakfast,free newspaper, wine happy hours, and evening cookies. it feels like you’re staying...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Business Details End-->
+
+                                        <ul class="opening-loc">
+                                            <li><img src="images/businesslist/time.png" alt="Opening Time"> <span>Closed Now</span> </li>
+                                            <li><img src="images/businesslist/location.png" alt="Opening Time"> 55 N Street, Las Vegas, NV, United States</li>
+                                        </ul>
+                                        <!--Opening Location End-->
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Business End-->
+
+                        <div class="single-business">
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12 pr-0">
+                                    <div class="business-image">
+                                        <img src="images/businesslist/featured-business1.jpg" alt="Features Business">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-12 pl-0">
+                                    <div class="bimage-content">
+                                        <h4>Featuredbusiness <span> <img src="images/businesslist/shop.png" alt=""> Restaurants</span></h4>
+                                        <!--Business Heading End-->
+
+                                        <ul class="b-rating">
+                                            <li>
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-gray.png" alt="Review">
+                                            </li>
+
+                                            <li>
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-gray.png" alt="Price">
+                                                <img src="images/businesslist/dolar-gray.png" alt="Price">
+                                            </li>
+                                            <li><span>24 Ratings</span></li>
+                                        </ul>
+                                        <!--Review End-->
+
+                                        <div class="business-details">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-md-2 col-sm-2 col-12 ">
+                                                    <div class="person-img text-center">
+                                                        <img src="images/businesslist/business-people4.png" alt="Business People">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-10 col-md-10 col-sm-10 col-12 p-0">
+                                                    <div class="person-business">
+                                                        <p>This boutique hotel offers such friendly service, a great morning continental breakfast,free newspaper, wine happy hours, and evening cookies. it feels like you’re staying...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Business Details End-->
+
+                                        <ul class="opening-loc">
+                                            <li><img src="images/businesslist/time-open.png" alt="Opening Time"> <span style="color: #e75054;">Open Now</span> </li>
+                                            <li><img src="images/businesslist/location.png" alt="Opening Time"> 55 N Street, Las Vegas, NV, United States</li>
+                                        </ul>
+                                        <!--Opening Location End-->
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Business End-->
+
+                        <div class="single-business">
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-12  pr-0">
+                                    <div class="business-image">
+                                        <img src="images/businesslist/featured-business2.jpg" alt="Features Business">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-12 pl-0">
+                                    <div class="bimage-content">
+                                        <h4>Featuredbusiness <span> <img src="images/businesslist/shop.png" alt=""> Hotels</span></h4>
+                                        <!--Business Heading End-->
+
+                                        <ul class="b-rating">
+                                            <li>
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-yellow.png" alt="Review">
+                                                <img src="images/businesslist/star-gray.png" alt="Review">
+                                            </li>
+
+                                            <li>
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+                                                <img src="images/businesslist/dolar-yellow.png" alt="Price">
+
+                                            </li>
+                                            <li><span>24 Ratings</span></li>
+                                        </ul>
+                                        <!--Review End-->
+
+                                        <div class="business-details">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                                                    <div class="person-img text-center">
+                                                        <img src="images/businesslist/business-people5.png" alt="Business People">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-10 col-md-10 col-sm-10 col-12 ">
+                                                    <div class="person-business">
+                                                        <p>This boutique hotel offers such friendly service, a great morning continental breakfast,free newspaper, wine happy hours, and evening cookies. it feels like you’re staying...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Business Details End-->
+
+                                        <ul class="opening-loc">
+                                            <li><img src="images/businesslist/time-open.png" alt="Opening Time"> <span style="color: #e75054;">Open Now</span> </li>
+                                            <li><img src="images/businesslist/location.png" alt="Opening Time"> 55 N Street, Las Vegas, NV, United States</li>
+                                        </ul>
+                                        <!--Opening Location End-->
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Business End-->
+
+                    </div>
+                    <!--Individual List Content End-->
+                    
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                    <div class="right-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81803.98499533397!2d-115.12535866559813!3d36.170687063714276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c30858e07257%3A0x2d2ad74eb775b839!2sMelrose%20Dr%2C%20Las%20Vegas%2C%20NV%2089101%2C%20USA!5e0!3m2!1sen!2sbd!4v1619351947706!5m2!1sen!2sbd" width="400" height="1550" style="border:0; padding: 0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====|| Business List Section Start ||====-->
+
+    <!--====|| Footer Section Start ||====-->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div class="row">
+                    <div class="col-xs-1 col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                    <div class="col-xs-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                        <div class="row">
+                            <div class="col-xs-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="footer-contact">
+                                    <div class="f-logo">
+                                        <img src="images/homepage/ALL-VEGAS-LOGO.png" alt="">                                       
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="lorem">
+                                            <h6>Lorem Ipsum</h6>
+                                            <ul>
+                                                <li> Lorem ipsum</li>
+                                                <li> Dolor sit amet</li>
+                                                <li>Consectetur adipiscing</li>
+                                                <li>Tempor incididunt</li>
+                                                <li>Dolore magna aliqua</li>
+                                                <li>Ut enim ad minim</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="lorem">
+                                            <h6>Dollar</h6>
+                                            <ul>
+                                                <li> Lorem ipsum</li>
+                                                <li> Dolor sit amet</li>
+                                                <li>Consectetur adipiscing</li>
+                                                <li>Tempor incididunt</li>
+                                                <li>Dolore magna aliqua</li>
+                                                <li>Ut enim ad minim</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====|| Footer Section End ||====-->
+
+
+
+    <!--All JS File Link Here-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

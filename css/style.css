@@ -1,0 +1,1434 @@
+/** ====|| Common CSS Start ||==== **/
+@font-face{
+    font-family: 'Open Sans', sans-serif;
+    src: url(..//fonts/OpenSans-Regular.ttf);
+    src: url(..//fonts/OpenSans-Light.ttf);
+    src: url(..//fonts/OpenSans-Bold.ttf);
+}
+@font-face{
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 58px;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+.ind-icon{
+    color: #e7e7e7 !important;
+}
+/** ====|| Common CSS End ||==== **/
+
+/** ====|| Header CSS Start ||==== **/
+header#homepage-header{
+    background-image:linear-gradient(0deg, rgba(19, 17, 17, 0.767), rgba(0, 0, 0, 0.726)), url(../images/homepage/home-banner.jpg);
+    background-size: cover;
+    min-height: 530px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+/*Nav Start*/
+header nav{
+    overflow: hidden;
+    z-index: 9999;
+}
+header nav .logo{
+    width: 15%;
+}
+header nav a img{
+    width: 100%;
+}
+header nav ul li {
+    margin-left: 37px;
+}
+header nav ul li:first-child{
+    margin-left: 0;
+}
+header nav ul li a{
+    font-size: 15px;
+    color: #fff;
+    transition: .3s;
+}
+header nav ul li a:hover{
+    color: #dd8966;
+}
+header nav ul li#b-drop {
+    position: relative;
+}
+header nav ul li#b-drop > ul {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+header nav ul li#b-drop > ul li{
+    position: absolute;
+    list-style: none;
+    width: 100px;
+}
+header nav ul li#b-drop:hover > ul li{
+    visibility: visible;
+    z-index: 999;
+}
+header nav ul li#b-drop > ul li a{
+    text-decoration: none;
+}
+header nav ul li#s-drop {
+    position: relative;
+}
+header nav ul li#s-drop > ul {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+header nav ul li#s-drop > ul li{
+    margin-left: 8px;
+    position: absolute;
+    list-style: none;
+    text-align: left;
+}
+header nav ul li#s-drop:hover > ul li{
+    visibility: visible;
+    z-index: 999;
+}
+header nav ul li#s-drop > ul li a{
+    text-decoration: none;
+}
+
+/*Nav Start*/
+
+/* Header Content Start */
+.banner-content{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.banner-content h1{
+    margin-top: 40px;
+}
+.banner-content p {
+    margin: 10px 0px 40px;
+    word-spacing: 2px;
+    font-size: 14px;
+}
+/* Search Form Start */
+.search-form {
+    margin:0 48px;
+    width: 89%;
+    border: 8px solid rgb(255 255 255 / 25%);
+    border-radius: 3px;
+}
+.search-form form{
+    padding: 8px;
+    outline: none;
+    background: #fff;
+}
+.search-form form i{
+    font-size: 25px;
+    color: #dcdcdc;
+}
+.search-form form .search-area {
+    background-color: #fff;
+    font-size: 14px;
+}
+.search-form form .search-area input {
+    width: 38%;
+    outline: none;
+    border: none;
+    border-right: 1px solid #c0c0c0;
+    padding: 8px 5px;
+}
+.search-form form .search-area input::placeholder{
+    font-size: 14px;
+    color: #a0a0a0;
+}
+.search-form form .search-area img.search-in {
+    width: 3%;
+}
+.search-form form a.check-io, a.adults {
+    padding: 8px 15px;
+    color: #676767;
+    text-decoration: none;
+    border-right: 1px solid #c0c0c0;
+}
+.search-form form a.adults{
+    border-right: none;
+}
+.search-form form a.adults span{
+    font-weight: 600;
+    color: #000;
+}
+.search-form form a.check-io img, a.adults img {
+    width: 2.7%;
+    margin-right: 8px;
+}
+.search-form form a.check-io span .fa-chevron-right{
+    font-size: 16px;
+    color: #676767;
+    padding: 0px 5px;
+}
+.search-form form .search-area a.search-btn {
+    padding: 5px 29px;
+    background: #e2a500;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #e2a500;
+    border-radius: 4px;
+    transition: .3s;
+}
+.search-form form .search-area a.search-btn:hover {
+    background: #fff;
+    color: #e2a500;
+}
+.your-qus{
+    padding: 0 50px;
+    margin-top: 30px;
+    position: relative;
+}
+.your-qus p {
+    color: #fff;
+    line-height: 23px;
+}
+.your-qus .qus-img{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -2%;
+}
+.your-qus .qus-img img{
+    width: 80%;
+}
+/* Search Form End */
+
+/* Header Content End */
+
+/** ====|| Header CSS End ||==== **/
+
+
+/** ====|| Feature CSS Start||==== **/
+/*Three Service Start*/
+.three-service{
+    margin-top: -70px;
+    text-align: center;
+}
+.three-service .single-service{
+    margin: 0;
+    padding: 0;
+    background-color: #e75054;
+    min-height: 100px;
+}
+.three-service .single-service img{
+    padding-top: 25px;
+    width: 30%;
+}
+.three-service .single-service.last img{
+    padding-top: 38.5px;
+}
+.three-service .single-service p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0;
+    color: #fff;
+    font-weight: 600;
+}
+.feature-section .feature-content{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.feature-section .feature-content h2{
+    padding-top: 30px;
+}
+p.same-p {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.feature-content .feature-img{
+    width: 100%;
+    min-height: 350px;
+    background-size: cover;
+    border-radius: 7px;
+    text-align: right;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.feature-content .feature-img h5{
+    color: #cf9801;
+}
+.feature-content .feature-img h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+.feature-content .feature-img2{
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 170px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    box-shadow: 0 10px rgba(0, 0, 0, 0) inset,120px -80px 120px rgba(0, 0, 0, 0.719) inset, -10px 0 rgba(0, 0, 255, 0) inset, 10px 0 rgba(0, 128, 0, 0) inset;
+
+}
+.feature-content .feature-img2 h3{
+    margin-top: 95px;
+    color: #fff;
+}
+.feature-content .feature-img2 h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 5px;
+    color: #cf9801;
+}
+/*Three Service End*/
+/** ====|| Feature CSS End||==== **/
+
+
+/** ====|| Exclusive Deal CSS Start||==== **/
+.edeal{
+    padding: 50px 0 70px;
+    background: #f6f6f6;
+}
+.edeal-section  h1{
+    text-align: center;
+}
+.edeal-section p {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.edeal .ex-offer{
+    width: 100%;
+    padding: 20px 20px 20px;
+    text-align: center;
+    background-size: cover;
+}
+.edeal .ex-offer .offer-amount{
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+.edeal .ex-offer .offer-amount h3{
+    margin:10px 30px 210px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.edeal .ex-offer h6 {
+    margin: -31px 20px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/** ====|| Exclusive Deal CSS End||==== **/
+
+
+/** ====|| Explore Blog CSS Start||==== **/
+.explore-blog{
+    padding: 50px 0 60px;
+}
+.explore-blog h1{
+    text-align: center;
+}
+.explore-blog > p {
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.explore-blog .single-blog{
+    width: 100%;
+}
+.explore-blog .single-blog img{
+    width: 100%;
+}
+.explore-blog .single-blog .blog-content {
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.explore-blog .single-blog .blog-content h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 35px;
+    color: #000;
+    text-align: center;
+}
+.explore-blog .single-blog .blog-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #676767;
+}
+.explore-blog .single-blog .blog-content ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 14px;
+    color: #676767;
+}
+.explore-blog .single-blog .blog-content ul li i{
+    padding-right: 15px;
+    font-size: 16px;
+    color: #e75054;
+}
+.blog-content .blog-btn{
+    margin-top: 20px;
+}
+.blog-content .blog-btn  ul li{
+    list-style: none;
+    float: left;
+    border: 2px solid #e75054;
+    border-radius: 5px;
+}
+.blog-content .blog-btn  ul li:nth-child(2){
+    float: right;
+}
+.blog-content .blog-btn  ul li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e75054; 
+    display: inline-block;
+    padding: 7px 20px;
+    transition: .3s;
+}
+.blog-content .blog-btn  ul li a:hover{
+    background: #e75054;
+    color: #fff;
+}
+.blog-content .blog-btn  ul li:nth-child(2) a{
+    background: #e75054;
+    color: #fff;
+}
+.blog-content .blog-btn  ul li:nth-child(2) a:hover{
+    background: #fff;
+    color: #e75054; 
+}
+/** ====|| Explore Blog CSS End||==== **/
+
+
+/** ====|| Footer CSS Start||==== **/
+footer{
+    padding: 30px 0px;
+    background: #252525;
+    color: #fff;
+}
+
+ /*Footer Left Start*/
+footer .footer-contact{
+    padding: 0px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+footer .footer-contact .f-logo{
+    margin-bottom: 20px;
+    width: 40%;
+}
+footer .footer-contact .f-logo img{
+    width: 100%;
+}
+footer .footer-contact ul{
+    margin-top: 30px;
+}
+footer .footer-contact ul li {
+    margin-right: 24px;
+    list-style: none;
+    display: inline-block;
+}
+footer .footer-contact ul li a i {
+    padding: 6px;
+    font-size: 17px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    background: #515151;
+    color: #252525;
+    border: 2px solid #515151;
+    border-radius: 50%;
+    transition: .3s;
+}
+footer .footer-contact ul li a i:hover {
+    background: #252525;;
+    color: #515151;
+}
+ /*Footer Left End*/
+
+  /*Footer Right Start*/
+  footer .lorem {
+    margin-top: 40px;
+    padding: 0px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+footer .lorem h6{
+    font-weight: 700;
+    color: #e75054;
+}
+footer .lorem ul{
+    margin-top: 38px;
+}
+footer .lorem ul li {
+    margin-bottom: 12px;
+    list-style: none;
+}
+ /*Footer Right End*/
+/** ====|| Footer  CSS End||==== **/
+
+
+/** ===========|| ****** Homepgae  CSS End ******||=========== **/
+
+
+
+
+
+/** ===========|| ****** Business Page  CSS Start ******||=========== **/
+/** Header CSS Start **/
+header#common-header{
+    background: #303030;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+header form.menu-search button {
+    outline: none;
+    cursor: pointer;
+}
+header form.menu-search{
+    margin-left: 3%;
+    width: 33%;
+    padding: 5px;
+    background-color: #6f6f6f;
+    border-radius: 3px;
+}
+header form.menu-search .search-place{
+    width: 89%;
+    background-color: #fff;
+    border-radius: 3px;
+}
+header form.menu-search .search-place i{
+    padding-top: 8px;
+    padding-left: 8px;
+    font-size: 20px;
+    color: #c0c0c0;
+}
+header form.menu-search .search-place input{
+    width: 85%;
+    height: 30px;
+    padding: 0 7px 3px;
+    border: none;
+    outline: none !important;
+}
+header form.menu-search .search-place input::placeholder{
+    padding-bottom: 10px;
+}
+header form.menu-search button{
+    background: #6f6f6f;
+    border: none;
+    color: #fff;
+    margin-left: 12px;
+}
+/** Header CSS End **/
+
+
+/** Banner CSS Start **/
+section#banner-section img{
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+}
+.owl-theme .owl-nav button.owl-prev{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    outline: 0;
+}
+.owl-theme .owl-nav button.owl-prev:hover{
+    background: none !important;
+}
+.owl-theme .owl-nav button.owl-next{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    outline: 0;
+}
+.owl-theme .owl-nav button.owl-next:hover{
+    background: none;
+}
+.owl-theme .owl-nav button.owl-prev span{
+    font-size: 45px;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+.owl-theme .owl-nav button.owl-next span{
+    font-size: 45px;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+.owl-theme .owl-dots {
+    display: none !important; 
+    visibility: hidden;
+}
+section#banner-section .banner-left img{
+    width: 100%;
+} 
+/** Banner CSS End **/
+
+/** ====|| Amazing Magic CSS Start||==== **/
+section#amazing-magic{
+    padding: 50px 0;
+    background: #f6f6f6;
+}
+section#amazing-magic ul li{
+    list-style: none;
+    display: inline-block;
+}
+section#amazing-magic ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+section#amazing-magic .container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+}
+/** ====|| Amazing Magic CSS End||==== **/
+
+/** ====|| Amazing Content CSS Start||==== **/
+section#amazing-content{
+    padding: 50px 0;
+}
+
+
+/*==| Amazing Left Sidebar Start|==*/
+section#amazing-content .amazing-p {
+    padding: 20px 30px;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+section#amazing-content .amazing-p p {
+    margin-bottom: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 14px;
+}
+section#amazing-content .amazing-p p:last-child{
+    margin-bottom: 0;
+}
+/* Amzaing Content End*/
+
+.amazing-policy{
+    padding: 30px 0;
+}
+.amazing-policy ul {
+    text-align: center;
+    margin-bottom: 0;
+}
+.amazing-policy ul li {
+    margin-right: 50px;
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+}
+.amazing-policy ul li:last-child{
+    margin-right: 0;
+}
+.amazing-policy ul li img{
+    width: 22px;
+    margin-right: 5px;
+}
+/* Amzaing Policy End*/
+
+section#amazing-content .show-times{
+    padding: 30px;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+section#amazing-content .show-times h4{
+    padding-bottom: 40px;
+    line-height: 0;
+}
+.show-times .price-plan {
+    margin-bottom: 40px;
+    padding: 7px;
+    background: #f5f5f5;
+    border-radius: 7px;
+}
+
+.show-times .price-plan .row div{
+    height: 40px;
+}
+.show-times .price-plan  .date-btn{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: #e75054;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.show-times .price-plan  .date-btn h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 0;
+    padding: 8px 0 0px;
+}
+.show-times .price-plan  .date-btn p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 0;
+    color: #fff;
+    padding: 7px 0 0;
+}
+
+
+.show-times .price-plan .time h5{
+    margin-top:12px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.show-times .price-plan .price-details{
+    padding-left: 11px;
+    text-align: center;
+}
+.show-times .price-plan .price-details h6{
+    margin-top: 5px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+}
+.show-times .price-plan .price-details h6 img{
+    width: 20px;
+    margin-right: 7px;
+}
+.show-times .price-plan .price-details p{
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.show-times .price-plan .percent{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border:2px solid #e75054;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.show-times .price-plan .percent h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #e75054;
+    line-height: 0;
+    padding: 8px 0 0px;
+}
+.show-times .price-plan .percent p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 0;
+    color: #e75054;
+    padding: 7px 0 0;
+}
+
+
+.show-times .price-plan .price-change {
+    padding: 12px 0 5px 7px;
+}
+.show-times .price-plan .price-change p{
+    margin-right: 5px;
+    float: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: #e75054;;
+}
+.show-times .price-plan .price-change h5{
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.show-times .load-more {
+    text-align: center;
+}
+.show-times .load-more a{
+    padding: 10px 25px;
+    border: 2px solid #e75054;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #e75054;
+    transition: .3s;
+}
+.show-times .load-more a:hover{
+    background: #e75054;;
+    color: #fff;
+}
+/* Show Times CSS End*/
+/*==| Amazing Left Sidebar End |==*/
+
+
+/*==| Amazing Right Sidebar Start |==*/
+.hotel-map ,.best-shows{
+    margin-bottom: 15px;
+    padding: 12px;
+    border:2px solid #f1f1f1;
+    border-radius: 8px;
+}
+.hotel-map h6{
+    font-size: 14px;
+    line-height: 10px;
+}
+.hotel-map .h-map {
+    margin-top: 16px;
+}
+.hotel-map .h-map iframe{
+    border-radius: 8px;
+}
+/* Hotel Map CSS End */
+
+
+/*==| Amazing Right Sidebar End |==*/
+.best-shows ul {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.best-shows ul li{
+    margin-bottom: 12px;
+    list-style: none;
+}
+.best-shows ul li:last-child{
+    margin-bottom: 0px;
+}
+.best-shows ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #e75054;
+    text-decoration: none;
+}
+/** ====|| Amazing Content CSS End||==== **/
+
+
+/** ===========|| ****** Business Page  CSS End ******||=========== **/
+
+
+
+/** ===========|| ****** Inner Page  CSS Start ******||=========== **/
+/** ====|| Amazing Review CSS Start||==== **/
+/** ==| Review CSS Start |== **/
+section#banner-section {
+    height: 280px;
+    overflow: hidden;
+    margin-top: 96px;
+    position: relative;
+    z-index: 1;
+}
+section#banner-section .banner-left,.banner-middle,.banner-right{
+    width: 100%;
+}
+section#banner-section .banner-left img{
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+}
+section#banner-section .banner-right img{
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+}
+section#amazing-magic .review-btn {
+    width: 48%;
+    float: left;
+    margin-top: 22px;
+}
+section#amazing-magic .review-btn p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #9f9f9f;
+    text-align: center;
+    line-height: 12px;
+}
+section#amazing-magic .review-btn a {
+    background-color: #51a145;
+    padding: 7px 18px;
+    border: 2px solid #51a145;
+    border-radius: 5px;
+    text-decoration: none;
+}
+section#amazing-magic .review-btn a img{
+    width: 15%;
+}
+section#amazing-magic .review-btn a img:nth-child(2) {
+    width: 40%;
+}
+section#amazing-magic .review-btn2 {
+    width: 48%;
+    float: left;
+    margin-top: 48px;
+    margin-left: 11px;
+}
+section#amazing-magic .review-btn2.second {
+    width: 45%;
+    float: left;
+    margin-top: 48px;
+    margin-left: 11px;
+}
+section#amazing-magic .review-btn2.second a {
+    padding: 10px 30px;
+}
+section#amazing-magic .review-btn2 a {
+    background-color: #E75054;
+    padding: 10px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #E75054;
+    border-radius: 5px;
+    transition: .3s;
+}
+section#amazing-magic .review-btn2 a:hover{
+    background: #e7e7e7;
+    color:#E75054;
+}
+/** ==| Review CSS END |== **/
+
+/** ====|| Amazing Review CSS End||==== **/
+
+
+/** ====|| Amazing Catagory CSS Start ||==== **/
+#inner-blog{
+    padding: 30px 0;
+}
+#inner-blog .inner-paragraph {
+    padding: 15px 25px 0;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+#inner-blog .inner-paragraph p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+/** Inner Paragraph End **/
+
+.amazing{
+    padding: 30px 0;
+}
+.amazing-policy2.margin-bottom{
+    margin-bottom: 15px;
+}
+.amazing-policy2 ul {
+    margin-bottom: 0;
+}
+.amazing-policy2 ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+}
+.amazing-policy2 ul li:nth-child(1) {
+    width: 28%;
+}
+.amazing-policy2 ul li:nth-child(2) {
+    width: 22%;
+}
+.amazing-policy2 ul li:nth-child(3) {
+    width: 15%;
+}
+.amazing-policy2 ul li:nth-child(4) {
+    width: 33%;
+}
+.amazing-policy2 ul li:last-child{
+    margin-right: 0;
+}
+.amazing-policy2 ul li img{
+    width: 22px;
+    margin-right: 5px;
+}
+/** Amzing PLoicy2 End **/
+.benificial-service {
+    padding: 15px 12px;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+.benificial-service ul {
+    margin: 0;
+    padding: 0;
+}
+.benificial-service ul li{
+    margin-bottom: 10px;
+    list-style-position: inside;
+    color: #e75054;
+}
+.benificial-service ul li:last-child{
+    margin-bottom: 0;
+}
+.benificial-service ul li span {
+    margin-left: -10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+}
+/* Benificial Service CSS End */
+
+.terms-condition{
+    margin: 30px 0;
+    padding: 15px 25px 0;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+.terms-condition h6{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+.terms-condition p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+/* Terms & Condition CSS End*/
+.transport{
+    margin-bottom: 15px;
+    padding: 12px;
+    border:2px solid #f1f1f1;
+    border-radius: 8px;
+}
+.transport h4{
+    margin-bottom: 25px;
+}
+.transport p {
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.transport p:last-child{
+    margin-bottom: 0;
+}
+.transport p span{
+    float: right;
+}
+
+/* Transport CSS End */
+
+/** ====|| Amazing Catagory CSS End ||==== **/
+/** ===========|| ****** Inner Page  CSS End ******||=========== **/
+
+
+
+
+/** ===========|| ****** Business List Page  CSS Start ******||=========== **/
+
+/* List Tab CSS Start */
+section#business-list {
+    overflow: hidden;
+    margin-top: 100px;
+}
+section#business-list .list-tab{
+    padding: 50px 0;
+    overflow: hidden;
+}
+section#business-list .list-tab ul li{
+    margin-right: 20px;
+    list-style: none;
+    float: left;
+}
+section#business-list .list-tab ul li:last-child {
+    margin-right: 0;
+    margin-left: 65px;
+}
+section#business-list .list-tab ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #9f9f9f;
+    padding: 5px 10px;
+    border: 2px solid #9f9f9f;
+    border-radius: 5px;
+    transition: .1s;
+}
+section#business-list .list-tab ul li a:hover{
+    padding: 6px 12px;
+}
+section#business-list .list-tab ul li a img{
+    margin-right: 5px;
+}
+section#business-list .list-tab ul li:nth-child(2) a img{
+    width: 25%;
+}
+section#business-list .list-tab ul li select {
+    font-family: 'Montserrat', sans-serif;
+    padding: 4px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #9f9f9f;
+    border: 2px solid #9f9f9f;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+section#business-list .list-tab ul li select option {
+    font-size: 12px;
+    font-weight: 600;
+}
+/* List Tab CSS End */
+
+/* Individual List Content CSS Start */
+.individual-business{
+    overflow: hidden;
+} 
+.individual-business .single-business{
+    min-height: 240px;
+    margin-bottom: 30px;
+}
+.individual-business .single-business .business-image img{
+    width: 100%;
+    min-height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.individual-business .single-business .bimage-content{
+    padding: 10px;
+    border: 2px solid #e7e7e7;
+    border-left: 0;
+    border-radius: 0 8px 8px 0;
+}
+.individual-business .single-business .bimage-content h4 span{
+    margin: 5px 15px 0 0;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+/* Business Heading End */
+.individual-business .business-image img{
+    width: 100%;
+    border-radius: 8px 0 0 8px;
+}
+.individual-business .bimage-content {
+    min-height: 240px;
+}
+.individual-business .bimage-content ul.b-rating li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.individual-business .bimage-content ul li img {
+    margin-right: -5px;
+    padding: 0;
+}
+
+.individual-business .bimage-content ul li span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+/* Review CSS End */
+
+.individual-business .bimage-content .business-details .person-business p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-right: 15px;
+}
+.individual-business .bimage-content .business-details .person-img img{
+    width: 100%;
+}
+/* Business Details CSS End */
+.individual-business .bimage-content ul.opening-loc {
+    margin-bottom: 0;
+}
+.individual-business .bimage-content ul.opening-loc li{
+    margin-right: 50px;
+    font-size: 14px;
+    display: inline-block;
+}
+.individual-business .bimage-content ul.opening-loc li{
+    color: #9f9f9f;
+}
+.individual-business .bimage-content ul.opening-loc li img{
+    margin-right: 3px;
+}
+/* Individual List Content CSS End */
+
+section#business-list .rigt-map{
+    text-align: center;
+    overflow: hidden;
+}
+section#business-list .rigt-map iframe{
+    overflow: hidden;
+}
+/** ===========|| ****** Business List Page  CSS End ******||=========== **/
+
+
+
+
+/** ===========|| ****** Business Page  CSS End ******||=========== **/
+/**Amazing Magic CSS Start**/
+section#amazing-magic .review-btn.two{
+    margin-top: 50px;
+    text-align: center;
+}
+section#amazing-magic .review-btn.two a{
+    padding: 7px 23px;
+    background: #e2a500;
+    border: 2px solid #e2a500;
+    transition: .3s;
+}
+section#amazing-magic .review-btn.two a img{
+    width: 10%;
+}
+section#amazing-magic .review-btn2.second a {
+    background: #fff !important;
+    color: #E75054 !important;
+}
+section#amazing-magic .review-btn2.second a:hover {
+    background: #E75054 !important;
+    color: #fff !important;
+}
+/**Amazing Magic CSS End**/
+#inner-blog .amazing-policy2.second ul li:nth-child(1){
+    width: 30% !important;
+}
+#inner-blog .amazing-policy2.second ul li:nth-child(2){
+    width: 30% !important;
+}
+#inner-blog .amazing-policy2.second ul li:nth-child(3){
+    width: 30% !important;
+}
+/**Amazing Magic CSS End**/
+
+/* Benificial Service CSS Start*/
+#inner-blog .benificial-service h6{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+#inner-blog .benificial-service ul#business-bservices li{
+    list-style: none !important;
+    text-align: left !important;
+}
+#inner-blog .benificial-service ul#business-bservices li span{
+    margin-left: 0 !important;
+}
+
+/* Benificial Service CSS End */
+
+/** Two Review CSS Start **/
+#inner-blog .two-review{
+    margin-top: 30px;
+    padding: 20px 0;
+}
+#inner-blog .two-review h4{
+    padding-bottom: 5px;
+}
+#inner-blog .two-review .single-review{
+    margin-bottom: 30px;
+    padding: 15px 25px;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+#inner-blog .two-review .single-review .left-client h5{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+#inner-blog .two-review .single-review .left-client p{
+    margin-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #9f9f9f;
+}
+#inner-blog .two-review .single-review .left-client p img {
+    width: 20%;
+    margin-top: -5px;
+}
+#inner-blog .two-review .single-review .review-content h5{
+    margin: 5px 0 25px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+#inner-blog .two-review .single-review .review-content h5 span{
+    float: right;
+}
+#inner-blog .two-review .single-review .review-content h5 span img{
+    width: 23%;
+    margin-left: -7px;
+}
+#inner-blog .two-review .single-review .review-content p{
+    font-size: 14px;
+    line-height: 25px;
+}
+#inner-blog .two-review .single-review .review-content .three-rest-img .single-rest img{
+    width: 100%;
+}
+/** Two Review CSS End **/
+
+/* Inner Right Sidebar CSS Start  */
+section#inner-blog .hotel-map ul{
+    margin-top: 10px
+}
+section#inner-blog .hotel-map ul li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+section#inner-blog .hotel-map ul li:last-child{
+    margin-bottom: 0;
+}
+section#inner-blog .hotel-map ul li span{
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+/* Map CSS End */
+
+section#inner-blog .price-range{
+    margin: 30px 0;
+    padding: 12px;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+section#inner-blog .price-range ul{
+    margin-bottom: 0;
+}
+section#inner-blog .price-range ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+section#inner-blog .price-range ul li:first-child{
+    margin-right: 20px;
+}
+section#inner-blog .price-range ul li:last-child{
+    margin-right: 0;
+}
+section#inner-blog .price-range ul li img {
+    width: 15px;
+    margin: -2px;
+    padding: 0;
+}
+section#inner-blog .price-range ul li span{
+    font-size: 14px;
+    font-weight:600;
+    line-height: 0;
+}
+section#inner-blog .price-range ul li span#sp-bold{
+    font-size: 15px;
+    font-weight:700;
+}
+/* Price Range End */
+
+section#inner-blog .payment-system h4{
+    margin-bottom: 20px;
+}
+section#inner-blog .payment-system{
+    margin: 30px 0;
+    padding: 12px;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+}
+section#inner-blog .payment-system p{
+    font-size: 14px;
+    font-weight: 600;
+}
+section#inner-blog .payment-system p:last-child{
+    margin-bottom: 0;
+}
+section#inner-blog .payment-system p span{
+    float: right;
+}
+section#inner-blog .payment-system p span img {
+    width: 82%;
+}
+/* Payment System End */
+
+section#inner-blog .claim-business {
+    text-align: center;
+}
+section#inner-blog .claim-business .cliam-btn {
+    margin-top: 25px;
+}
+section#inner-blog .claim-business .cliam-btn a{
+    background-color: #fff;
+    padding: 12px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #E75054;
+    border: 2px solid #E75054;
+    border-radius: 5px;
+    transition: .3s;
+}
+section#inner-blog .claim-business .cliam-btn a:hover{
+    background: #E75054;
+    color: #e7e7e7;
+}
+/** Claim CSS End **/
+/* Inner Right Sidebar CSS Start  */
+
+
+/** ===========|| ****** Business  Page  CSS End ******||=========== **/
